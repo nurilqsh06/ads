@@ -18,7 +18,7 @@ public class MyHashTable<K, V> {
     }
 
     private HashNode<K, V>[] chainArray;
-    private int M = 11; // default number of chains
+    private int M = 11; 
     private int size;
 
     @SuppressWarnings("unchecked")
@@ -51,7 +51,6 @@ public class MyHashTable<K, V> {
             head = head.next;
         }
 
-        // Insert new node at beginning
         head = chainArray[bucketIndex];
         HashNode<K, V> newNode = new HashNode<>(key, value);
         newNode.next = head;
