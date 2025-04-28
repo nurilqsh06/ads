@@ -42,7 +42,6 @@ public class MyHashTable<K, V> {
         int bucketIndex = hash(key);
         HashNode<K, V> head = chainArray[bucketIndex];
 
-        // Check if key already exists
         while (head != null) {
             if (head.key.equals(key)) {
                 head.value = value;
