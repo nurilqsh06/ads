@@ -13,7 +13,6 @@ public class Main {
             table.put(key, i);
         }
 
-        // Ask MyHashTable to print bucket sizes
         table.printBucketSizes();
     }
 }
